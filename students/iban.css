@@ -1,0 +1,29 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#site-main{
+    overflow: hidden;
+}
+
+section.introduce{
+    float: left;
+    width: 60%;
+}
+
+section.experiments{
+    float: right;
+    width: 40%;
+}
