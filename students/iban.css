@@ -13,12 +13,22 @@ body {
   margin: 0;
   padding: 0;
 }
+/* ---- typography ---- */
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 10px 0 50px;
 
+}
+/* ---- Layout ---- */
 #site-main{
     overflow: hidden;
+
+}
+.container{
+  margin: 0 20px;
 }
 
-section.introduce{
+/* section.introduce{
     float: left;
     width: 60%;
 }
@@ -26,4 +36,21 @@ section.introduce{
 section.experiments{
     float: right;
     width: 40%;
+} */
+
+@media (min-width: 768px){
+  section.introduce{
+    float: left;
+    width: 50%;
+  }
+
+  section.experiments{
+    float: right;
+    width: 30%;
+  }
+
+  .container{
+    max-width: 728px;
+    margin: 0 auto;
+  }
 }
