@@ -101,7 +101,7 @@ main {
   margin-top: 15%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 /* Section Profile */
