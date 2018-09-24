@@ -1,0 +1,62 @@
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*----layout----*/
+.container {
+  margin: 0 20px;
+}
+@media (min-width : 768px) {
+  section.perfil {
+    float: left;
+  }
+  section.experiments {
+    float: right;
+  }
+}
+container {
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+
+
+/*----typography----*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#site-main {
+  overflow: hidden;
+}
+
+section.perfil {
+  float: left;
+  width: 50%;
+  background: green;
+}
+
+section.experiments {
+  float: right;
+  width: 50%;
+  background: blue;
+  color: red;
+}
+
+.clear {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
