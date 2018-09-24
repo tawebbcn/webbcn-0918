@@ -1,3 +1,4 @@
+function desaparece(){
 var li1= document.querySelector("button");
 var li2= document.querySelector(".btnder");
 var sectionizq= document.querySelector(".perfil") 
@@ -18,4 +19,6 @@ li2.addEventListener('click', function(){
   } else{
       li2.innerText = "Esconde la sección"; 
     }
-  })
+  });
+}
+window.addEventListener('load', desaparece)
