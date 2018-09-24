@@ -16,17 +16,109 @@ body {
 /* ---- typography ---- */
 body {
   font-family: 'Montserrat', sans-serif;
-  padding: 0 10px 0 50px;
+  margin-top: 0;
+}
 
+body .main-img{
+  width: 100%;
+  position: absolute;
+  
 }
 /* ---- Layout ---- */
+header.container{
+  position: relative;
+  height: 600px;
+  background-image: url('./images/iban_img/iban01.JPG');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.constainer-box{
+  position: relative;
+}
+
+.container-box h1{
+  position: absolute;
+  top: 372px;
+    left: -1px;
+  color: white;
+}
+
+.container-box .nav-bar{
+  position: absolute;
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  top: 50px;
+  margin-top: 0;
+}
+
+.container-box .main-page-link{
+  position: absolute;
+  top: 15px;
+  left: 230px;
+  color: white;
+}
+
+.container-box .introduce-text{
+  position: absolute;
+  padding: 20px 20px 20px 20px;
+  top: 420px;
+  width: 85%;
+  min-height: 100px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 0 10px 10px 0;
+  font-size: 16px;
+}
+
+.nav-bar{
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar img{
+  width: 30px;
+  margin-left: 10px;
+  
+}
+
+.nav-bar .options{
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-bar .burguer-menu{
+  position: absolute;
+  top: 16px;
+  left: 10px;
+}
+
+.options{
+  margin-left: 100px;
+}
+
+.options li{
+  font-size: 13px;
+  margin-right: 50px;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+
 #site-main{
     overflow: hidden;
 
 }
 .container{
-  margin: 0 20px;
-}
+
+} 
 
 /* section.introduce{
     float: left;
@@ -38,7 +130,7 @@ section.experiments{
     width: 40%;
 } */
 
-@media (min-width: 768px){
+/* @media (min-width: 768px){
   section.introduce{
     float: left;
     width: 50%;
@@ -61,5 +153,5 @@ section.experiments{
 
 .primary-button{
  content: 'Esconder contenido';
-}
+} */
 
