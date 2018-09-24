@@ -1,0 +1,38 @@
+
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+
+body {
+
+  font-family:'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+} 
+
+  /* ---- layout --- */
+.container {
+  margin: 0 20px;
+}
+
+
+@media (min-width: 768px){
+  section.students {
+    float:left;
+  }
+  section.resources {
+    float:right;
+  }
+}
+
+.container {
+  margin: 0;
+  max-width: 720px;
+}
+

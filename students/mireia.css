@@ -1,0 +1,51 @@
+
+html {
+    box-sizing: border-box;
+   
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-family: Times,Georgia,serif;
+    font-size: 16px;
+    line-height: 147%;
+  }
+  
+section.students{
+    float: left;
+
+}
+section.resources{
+    float: left;
+
+}
+  
+  p {
+    margin: 0;
+  }
+
+  img{
+    max-width: 100%;
+}
+
+/* ---- header ---- */
+header.header{
+  position: fixed;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 5px;
+  left: 0;
+  top: 0;
+  background: #fff;
+  box-shadow: (0,0,0,.15);
+}
+
+.hidden {
+  display: none;
+}
