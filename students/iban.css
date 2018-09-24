@@ -54,3 +54,15 @@ section.experiments{
     margin: 0 auto;
   }
 }
+
+.hidden{
+  display: none;
+}
+
+/* .primary-button{
+ content: 'Esconder contenido';
+}
+
+.primary-button:after {
+	content: "Mostrar contenido";
+} */
