@@ -1,0 +1,39 @@
+/*Reset*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Tipografía*/
+body {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+
+#site-main{
+  overflow: hidden;
+}
+section.perfil {
+  float: left;
+}
+section.experiments {
+  float: right;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+@media (min-width: 768px){
+  min-width: 728px;
+}
+
+.hidden {
+  display: none;
+}
