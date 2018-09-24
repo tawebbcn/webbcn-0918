@@ -1,0 +1,122 @@
+/* --------------- Reset -------------------- */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* --------------- Typography --------------- */
+
+body{
+  font-family: 'Noto Serif JP', sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  color:#003F91;
+  font-weight: 900;
+}
+
+h3 {
+  color:#003F91;
+  font-weight: 900;
+}
+
+p, li {
+  color: rgb(44, 43, 43);
+  text-align: justify;
+}
+
+/* --------------- Layout --------------- */
+
+/* Structure */
+
+.container{
+  margin: 0% 2%;
+}
+
+.hidden{
+  display: none;
+}
+
+.section-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hide-button{
+  height: 2%;
+}
+
+/* Header */
+
+header.page-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  color:#003F91;
+  border-bottom: solid 1px #003F91;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+a.back-menu {
+  text-decoration: none;
+  border-radius: 5%;
+  padding: 2% 5%;
+  color:  #003F91;
+  background-color:white;
+  margin: 2% 5% 2% 0%;
+}
+
+h1.profile-title{
+  font-size: 1em;
+  font-weight: 900;
+  color: #003F91;
+  align-self: center;
+  margin: 2% 0% 2% 5%;
+}
+
+/* Main */
+
+main {
+  margin-top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Section Profile */
+
+.profile-picture{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.profile{
+  width: 100%;
+}
+
+.experiments{
+  width: 100%;
+}
