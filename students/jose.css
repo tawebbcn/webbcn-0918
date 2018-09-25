@@ -58,12 +58,13 @@ section.perfil{
     align-items: baseline;
   }
 .content-section section{
-  width: 50%;
+  width: 30%;
 }
 .section-intereses{
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
+  flex-grow: 2;
 }
 .section-intereses h3{
   flex-grow: 4;
@@ -71,6 +72,9 @@ section.perfil{
 }
 .section-intereses article{
   width:50%;
+}
+.section-intereses article img{
+  max-width: 20%;
 }
 .section-intereses article img:hover{
   transform: rotate(360deg);
