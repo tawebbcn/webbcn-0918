@@ -14,6 +14,12 @@
     <a href="../index.html" class="back-menu">Volver</a>
     <h1 class = "profile-title">Cohort 09 2018</h1>
   </header>
+  <div class="search">
+    <div class="input-student">
+      <input type="text" placeholder="Buscador de alumnos">
+      <div class="search-results"></div>
+    </div>
+  </div>
   <main id = "site-main">
     <section class="profile">
       <header class="section-header">
@@ -22,7 +28,7 @@
       </header>
       <div class = "to-hide-info">
         <p>Me llamo <em>Eva</em>, tengo 27 años y soy de Barcelona. La música me mueve, pero me mueve mal.</p>
-        <img src="https://bit.ly/2xhxscD" class="profile-picture" alt="Imagen de perfil">
+        <img src="images/evaa2.png" class="profile-picture" alt="Imagen de perfil">
         <h3>Intereses</h3>
         <ul class = "list-of-interests">
           <li>Netflix</li>
@@ -94,7 +100,25 @@
         </div>
       </div>
     </section>
+    <section class="games">
+      <header class="section-header">
+        <h2>Juegos</h2>
+        <button class="hide-button">Hide section</button>
+      </header>
+      <div class = "to-hide-info">
+        <article class="password-game">
+          <h3>The Password Game</h3>
+          <p>Uso contraseñas fáciles. Siempre suelen estar
+            entre las 25 más utilizadas del mundo. Intenta adivinar mi favorita.
+            Escríbela y pulsa ENTER. Si es correcta, la cuenta atrás parará.</p>
+          <button class="password-play-button">Jugar</button>
+          <div class="game-container">
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
+  <script type="text/javascript" src="../students.js"></script>
   <script type="text/javascript" src="evaa.js"></script>
 </body>
 </html>
