@@ -13,24 +13,75 @@ body {
 }
 .container{
   margin: 0 20px;
+  padding: 0 2%;
 }
 /* ---- typography ---- */
 body{
   font-family: 'Roboto', sans-serif;
 }
+.hidden{      
+  display: none;  /*Esconder con js*/
+}
+/* --- HEADER --- */
+body header.top-header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  background-color: rgba(37, 36, 37,0.5);
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+header ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+/* ---- MAIN --- */
+/* #site-main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;} */
+
+section.perfil{
+  display: flex;
+  justify-content: space-around;
+  flex-grow:1;
+  align-items: center;
+}
+.content-section{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: baseline;
+  }
+.content-section section{
+  width: 50%;
+}
+.section-intereses{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.section-intereses h3{
+  flex-grow: 4;
+  width: 100%;
+}
+.section-intereses article{
+  width:50%;
+}
+.section-intereses article img:hover{
+  transform: rotate(360deg);
+}
+.inte-section{
+  margin: 0 auto;
+}
 /* ---- repsonsives ---- */
-@media(min-width: 768px){
-  section.perfil{
-    float: left;
-  }
-  section.experimentos{
-    float: right;
-  }
+/* @media(min-width: 768px){
   .container{
     margin: 0 auto;
     max-width: 728px;
   }
-}
-.hidden{
-  display: none;
-}
+} */
