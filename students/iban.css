@@ -19,139 +19,209 @@ body {
   margin-top: 0;
 }
 
-body .main-img{
-  width: 100%;
-  position: absolute;
-  
-}
-/* ---- Layout ---- */
-header.container{
+/* ---- layout ---- */
+.header{
   position: relative;
-  height: 600px;
-  background-image: url('./images/iban_img/iban01.JPG');
+  height: 750px;
+  background-image: url(../students/images/iban_img/iban01.JPG);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.constainer-box{
-  position: relative;
-}
-
-.container-box h1{
+.main-page-link{
+  font-size: 20px;
   position: absolute;
-  top: 372px;
-    left: -1px;
+  top:15px;
+  margin-left: 45%;
   color: white;
-}
-
-.container-box .nav-bar{
-  position: absolute;
-  background-color: white;
-  height: 60px;
-  width: 100%;
-  top: 50px;
-  margin-top: 0;
-}
-
-.container-box .main-page-link{
-  position: absolute;
-  top: 15px;
-  left: 230px;
-  color: white;
-}
-
-.container-box .introduce-text{
-  position: absolute;
-  padding: 20px 20px 20px 20px;
-  top: 420px;
-  width: 85%;
-  min-height: 100px;
-  background-color: rgba(255, 255, 255, 0.3);
-  color: white;
-  border-radius: 0 10px 10px 0;
-  font-size: 16px;
-}
-
-.nav-bar{
-  overflow: hidden;
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-bar img{
-  width: 30px;
-  margin-left: 10px;
-  
-}
-
-.nav-bar .options{
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-bar .burguer-menu{
-  position: absolute;
-  top: 16px;
-  left: 10px;
-}
-
-.options{
-  margin-left: 100px;
-}
-
-.options li{
-  font-size: 13px;
-  margin-right: 50px;
   text-decoration: none;
   list-style-type: none;
 }
 
-
-
-#site-main{
-    overflow: hidden;
-
+.nav-bar{
+  height: 60px;
+  width: 100%;
+  margin-top: 50px;
+  position: fixed;
+  background-color: white;
+  z-index: 150;
 }
+
+.nav-bar .option-menu{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.option-menu li{
+  margin-top: 5px;
+  margin-right: 20px;
+  font-size: 14px;
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(50, 50, 50);
+}
+
+.header .title{
+  position: absolute;
+  top: 410px;
+}
+
+.title h1{
+  color:white;
+}
+
+.title .introduce-text{
+  position: absolute;
+  padding: 30px 30px 30px 50px;
+  top: 50px;
+  width: 130%;
+  min-height: 100px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  border-radius: 0 13px 13px 0;
+  font-size: 16px;
+}
+
+/* ---- about ---- */
+.about{
+  height: 820px;
+  position: relative;
+  margin-top: -20px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.about h2{
+  position: absolute;
+  top: 115px;
+  left:20px;
+  color: white;
+  z-index: 100;
+}
+
+.section-image{
+  position: absolute;
+  top: 185px;
+  left: 5px;
+  width: 115%;
+  z-index: 10;
+}
+
+.about .container{
+  color: white;
+  z-index: 50;
+  position: absolute;
+  top: 450px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-character;
+  width: 88%;
+}
+
+.about .second-text{
+  top: 605px;
+}
+
+
+/* --- experiments ---*/
+.experiments{
+  background-color: black;
+  margin-top: -20px;
+  height: 820px;
+  height: 820px;
+  position: relative;
+  margin-top: -20px;
+  overflow: hidden;
+}
+
+.experiments h2{
+  position: absolute;
+  top: 115px;
+  left:20px;
+  color: white;
+  z-index: 100;
+}
+
+.experiments-image{
+  position: absolute;
+  top: 185px;
+  left: 5px;
+  width: 100%;
+  z-index: 10;
+}
+
+.experiments .container{
+  color: white;
+  z-index: 50;
+  position: absolute;
+  top: 1250px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-character;
+  width: 88%;
+}
+
+.experiments .second-text{
+  top: 1405px;
+}
+
+
+/* body .main-img{
+  width: 100%;
+  /* position: absolute; */
+  
+/* ---- Layout ---- */
+/* .nav-bar{
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  position: fixed;
+  top: 50px;
+}
+
 .container{
+  /* position: relative; */
 
-} 
 
-/* section.introduce{
-    float: left;
-    width: 60%;
-}
 
-section.experiments{
-    float: right;
-    width: 40%;
+  /* position: relative; 
+  height: 700px;
+  background-image: url('./images/iban_img/iban01.JPG');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 } */
+/*
+head.container-box{
 
-/* @media (min-width: 768px){
-  section.introduce{
-    float: left;
-    width: 50%;
-  }
-
-  section.experiments{
-    float: right;
-    width: 30%;
-  }
-
-  .container{
-    max-width: 728px;
-    margin: 0 auto;
-  }
 }
 
-.hidden{
-  display: none;
+/* .counter{
+  position: absolute;
+  top:275px;
+  width: 100%;
+  font-size: 60px;
+  color: white;
 }
 
-.primary-button{
- content: 'Esconder contenido';
-} */
+.counter-button{
+  position: absolute;
+  top:400px;
+  background: none;
+  left: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.final-message{
+  position: absolute;
+  top: 80px;
+  font-size: 60px;
+  color: white;
+}
+*/
 
