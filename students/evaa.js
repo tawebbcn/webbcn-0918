@@ -92,7 +92,8 @@ function main (){
   var countdown = document.createElement('p');
   countdown.innerText = secondsCount;
   var userGuess = document.createElement('input');
-  userGuess.setAttribute('placeholder', "Escribe una contraseña")
+  userGuess.setAttribute("placeholder", "Escribe una contraseña")
+  userGuess.setAttribute("type", "password")
 
   var activatePasswordGame = function (event) {
     event.stopPropagation();
