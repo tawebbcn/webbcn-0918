@@ -2,55 +2,96 @@
 <html lang="en">
 
 <head>
-  <title>Hello, world!</title>
+  <title>Pedrochan</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="pedroche.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-
+<!--nueva estructura del HTML-->
 <body>
-<header class="container">
-    <h1>'Cohort 09 2018'</h1>
+  <nav class="nav">
     <a href="../index.html">Main Page</a>
-  </header>
-  <main id="site-main">
-  <section class="perfil">
-    <h2>Alexandra</h2>
-    <img src="http://rivista-cdn.reptilesmagazine.com/BeardedDragon_8.jpg?ver=1515734092" alt="yellow bearded dragon" class="img-dragon">
-    <p>My name's <em>Pedroche</em>, I'm an Ironhacker!</p>
-    <h3>Intereses</h3>
-    <ul>
-      <li>Rol</li>
-      <li>Anime</li>
-      <li>Videojuegos</li>
-      <li>Warhammer</li>
-    </ul>
-  </section>
-  <section class="experiments">
-    <h2>Experimentos</h2>
-    <article class="card experiment">
-      <header class="card-header">
-        <h3 class="title">My first experiment</h3>
-      </header>
-  
-    
-    <div class="card-body">
-      <p><em>WIP</em></p>
-        <p>JS Basic</p>
-      <p><a href="" class="external">Miralo en Github</a></p>
+      <h1 class="logo"><a href="#">icono chachi</a></h1>
+      <ul class="main-nav">
+          <li><a href="#">Resources & Tips</a></li>
+          <li><a href="#">Download printable resume</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+  </nav>
+<!--HEADER-->
+  <header class="header-style">
+    <div class="search">
+     <label for="name">Students</label>
+   </div>
+   <div class="input-student">
+    <input type="text">
+     <div class="search-results">
     </div>
-
-    <footer>
-      <p>Created in: xx/xx/xxxx</p>
-    </footer>
-    </article>
-
-  </section>
-</main>
-<button>click me</button>
+  </div>
+  <div id="container">
+  <h2>hola, soy yo</h2>
+  <div class="container-title">
+    <h3>alexandra pedroche</h3>
   
-</body>
-<script src="main.js">
-</script>
+
+    
+    <h4>geek lover - future developer</h4>
+    </div>
+  </header>
+  
+  <main id="site-main">
+<!--SECTION PERSONAL INFO-->    
+  <section class="info">
+    
+    <!--<button class="button-sec1">Who am I?...Just wait madafaka</button>
+    <p>My name's <em>Pedroche</em>, I'm an Ironhacker!</p>-->
+    <h3>Intereses</h3>
+     <div class="container-hobbies">
+    <div class="hobbies">
+      <img src= "../students/images/rol.svg" class="size-img">
+      <h3>Rol</h3>
+    </div>
+    <div class="hobbies">
+      <img src= "../students/images/anime.png" class="size-img">
+      <h3>Anime</h3>
+    </div>
+    <div class="hobbies">
+      <img src= "../students/images/game.png" class="size-img">
+      <h3>Videojuegos</h3>
+    </div>
+    <div class="hobbies">
+      <img src= "../students/images/code.svg" class="size-img">
+      <h3>Coding</h3>
+    </div>
+    </div>
+  </section>
+<!--SECTION EXPERIMENTS-->        
+  <section class="experiment">
+    <h2>proyectos y otras cosas interesantes</h2>
+     <article class="card experiment">
+      <div class="container-experiments">
+        <div class="experiments">
+          <h3>Mi primer juego</h3>
+        </div>
+        <div class="experiments">
+          <h3>Mi primer canvas</h3>
+        </div>
+        </div>
+        <p>Me gustaría saber tu opinión, dime algo!</p>
+    </article>
+  </section>
+  <footer>
+    <div class="contact-logos">
+      <img src="../students/images/TWITTER_icon-icons.com_65536.png" class="size-img" alt="twitter logo">
+      <img src="../students/images/facebook-logo-grey.png" class="size-img"alt="facebook logo">
+      <img src="../students/images/Social-youtube-logo-grey.png" class="size-img" alt="youtube logo">
+      <img src="../students/images/kisspng-hbi-solutions-inc-social-media-linkedin-computer-add-to-cart-button-5acee874c0ea54.1812718615235093647902.jpg" class="size-img" alt="linkedin capital">
+    </div>
+  </footer>
+ </main>
+<!--<button>click me</button>-->
+  </body>
+<script src="../students.js"></script>
+<script src="pedroche.js"></script>
 </html>

@@ -1,12 +1,27 @@
-function main () { 
-var section = document.querySelector("section.experiments");
-section.classList.add("hidden");
-var button = document.querySelector("button");
-button.addEventListener("click",function() {
-  section.classList.toggle("hidden");
-})
-}
 window.addEventListener("load", "main");
 
-
-
+function main() {
+  var section = document.querySelector('.perfil');
+  var button = document.querySelector('.toggle-info');
+  var section2 = document.querySelector('.experiments');
+  var button2 = document.querySelector('.toggle-experiments');
+  function handleToggleSection(e) {
+    section.classList.toggle('oculto');
+    if (section.classList.contains('oculto')){
+      e.currentTarget.innerText = 'Show header';
+    } else {
+      e.currentTarget.innerText = 'Hide header';
+    }
+  }
+  function handleToggleSection2(e) {
+    section2.classList.toggle('oculto');
+    if (section2.classList.contains('oculto')){
+      e.currentTarget.innerText = 'Show header';
+    } else {
+      e.currentTarget.innerText = 'Hide header';
+    }
+  }
+  button.addEventListener('click', handleToggleSection);
+  button2.addEventListener('click', handleToggleSection2);
+  }
+  
