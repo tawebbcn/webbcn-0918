@@ -27,6 +27,8 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-weight: 200;
+  margin: 0 auto;
+  display: block;
 }
 
 h2 {
@@ -37,6 +39,29 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font: 28px/36px 'Reenie Beanie', cursive;
+  letter-spacing: 1.7px;
+  color: #937f81;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+h4 {
+  margin-bottom: 15px;
+  padding-top: 0px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .white-text {
   color: white;
 }
@@ -44,13 +69,7 @@ h2 {
 /* ---- layout ---- */
 
 .container {
-  margin: 0 20px;
-}
-
-img.photo-asa {
-  height: 275px;
-  width: 100%;
-  overflow: hidden;
+  margin: 0 40px;
 }
 
 .hidden {
@@ -84,6 +103,14 @@ img.photo-asa {
   div.width-box {
     width: 750px;
   }
+
+  div.my-container {
+    width: 364px;
+  }
+
+  article.card {
+    width: 200px;
+  }
 }
 
 @media (min-width: 478px) and (max-width:768px) {
@@ -113,6 +140,14 @@ img.photo-asa {
 
   div.width-box {
     width: 420px;
+  }
+
+  div.my-container {
+    width: 420px;
+  }
+
+  article.card {
+    width: 200px;
   }
 }
 
@@ -144,15 +179,51 @@ img.photo-asa {
   div.width-box {
     width: 270px;
   }
+
+  div.my-container {
+    width: 270px;
+  }
+
+  article.card {
+    width: 270px;
+  }
 }
 
 /* ---- components ---- */
 .button {
-  background-color: #5A4D4F;
-  border-radius: 4px;
-  color: white;
-  font-size: 16px;
+  background-color: rgba(90, 77, 79, 0.2);
+  border: 2px solid #937F81;
+  color: #937F81;
+  font-size: 14px;
   padding: 10px 15px;
+  width: 150px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #3a3132;
+  box-shadow: 0 0 10px #3a3132;
+  margin: 25px auto;
+}
+
+.first-button {
+  padding: 10px 15px;
+  border: 2px solid #937F81;
+  text-align: center;
+  width: 150px;
+  color: #3a3132;
+  font-weight: 600;
+}
+
+.second-button {
+  padding: 10px 15px;
+  border: 2px solid #937F81;
+  text-align: center;
+  width: 150px;
+  color: #3a3132;
+  font-weight: 600;
+}
+
+button.push-button {
+  background-color: #5A4D4F;
+  box-shadow: none;
 }
 
 /* ---- search components ---- */
@@ -176,7 +247,7 @@ img.photo-asa {
   left: 0;
   right: 0;
   background-color: white;
-  box-shadow: 2px 2px 10px grey;
+  box-shadow: 2px 2px 10px #3a3132;
 }
 
 .input-student .search-results ul {
@@ -226,16 +297,58 @@ section.profile {
   display: flex;
   background-image: url('asa/asa2.jpg');
   height: 275px;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   justify-content: center;
 }
 
 div.cohort {
-  background-color: rgba(90, 77, 79, 0.7);
+  background-color: rgba(78, 66, 65, 0.8);
   width: 172px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 40px;
+  text-align: center;
 }
 
 div.width-box {
   height: 100%;
   display: flex;
+}
+
+/* ---- section about ---- */
+div.text-about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ---- section experiments ---- */
+div.articles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+a.return-to-home {
+  
+}
+
+/* ---- footer ---- */
+
+footer.footer {
+  background-color: #937F81;
+  margin-top: 30px;
+}
+
+footer p {
+  padding: 10px 30px;
+}
+
+/* ---- get back window ---- */
+div.get-back-window {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }

@@ -1,7 +1,7 @@
 'use strict';
 function main() {
 
-  var profile = document.querySelector('section.profile');
+  var linkSection = document.querySelector('div.link-section');
   var about = document.querySelector('section.about');
   var experiments = document.querySelector('section.experiments');
   var firstButton = document.createElement('button');
@@ -10,27 +10,27 @@ function main() {
   firstButton.classList.add('first-button');
   secondButton.classList.add('second-button');
 
-  firstButton.innerText = 'Hide first section';
-  secondButton.innerText = 'Hide second section';
+  firstButton.innerText = 'Hide About';
+  secondButton.innerText = 'Hide Experiments';
 
-  about.appendChild(firstButton);
-  about.appendChild(secondButton);
+  linkSection.appendChild(firstButton);
+  linkSection.appendChild(secondButton);
 
   function hideFirstSection(element) {
     about.classList.toggle('hidden');
     if (about.classList.contains('hidden')) {
-      element.currentTarget.innerText = 'Show first section';
+      element.currentTarget.innerText = 'Show About';
     } else {
-      element.currentTarget.innerText = 'Hide first section';
+      element.currentTarget.innerText = 'Hide About';
     }
   }
 
   function hideSecondSection(element) {
     experiments.classList.toggle('hidden');
     if (experiments.classList.contains('hidden')) {
-      element.currentTarget.innerText = 'Show second section';
+      element.currentTarget.innerText = 'Show Experiments';
     } else {
-      element.currentTarget.innerText = 'Hide second section';
+      element.currentTarget.innerText = 'Hide Experiments';
     }
   }
 
@@ -96,21 +96,25 @@ function handleKeyDown () {
 
 var getLost = document.querySelector('.dont-push-button');
 var getBack = document.querySelector('.push-button');
+var getBackText = document.querySelector('.get-back-text');
 var main = document.querySelector('main');
 var timerId;
 
 getLost.addEventListener('click', function () {
   main.classList.add('hidden');
   getBack.classList.remove('hidden');
+  getBackText.classList.remove('hidden');
   timerId = setTimeout(function () {
     main.classList.remove('hidden');
     getBack.classList.add('hidden');
+    getBackText.classList.add('hidden');
   }, 3000);
 });
 
 getBack.addEventListener('click', function () {
   main.classList.remove('hidden');
   getBack.classList.add('hidden');
+  getBackText.classList.add('hidden');
   clearTimeout(timerId);
 });
 

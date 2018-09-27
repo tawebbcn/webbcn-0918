@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="asa.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
 </head>
 
 <body>
@@ -42,43 +43,73 @@
     </section>
 
     <section class="about container">
-      <a href='../index.html'>Return to home</a>
-      <h1>About</h1>
-      <p>Hi,</p>
-      <p>I'm a swedish girl that loves <em>traveling</em> around the <strong>world</strong>. In my sparetime I like to <em>read books</em> and <em>play the piano</em> to clear my mind. My family and friends are really important to me. When I feel really frustrated and need a break, I desperately <em>watch Netflix</em>.</p>
-      <h3>My interests</h3>
-      <ul class='list'>
-        <li>Travel</li>
-        <li>Read books</li>
-        <li>Play the piano</li>
-        <li>Hang out with family and friends</li>
-        <li>Watch Netflix</li>
-      </ul>
+      <h3>Let me tell you</h3>
+      <h1>About me</h1>
+      <div class="text-about">
+        <div class="my-background my-container">
+          <h4>My background</h4>
+          <p>I'm a swedish girl that loves <em>traveling</em> around the <strong>world</strong>. In my sparetime I like to <em>read books</em> and <em>play the piano</em> to clear my mind. My family and friends are really important to me. When I feel really frustrated and need a break, I desperately <em>watch Netflix</em>.</p>
+        </div>
+        <div class="my-interests my-container">
+          <h4>My interests</h4>
+          <ul class='list'>
+            <li>Travel</li>
+            <li>Read books</li>
+            <li>Play the piano</li>
+            <li>Hang out with family and friends</li>
+            <li>Watch Netflix</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section class="experiments container">
-      <h2>Experiments</h2>
+      <h3>Take a look at my</h3>
+      <h1>Experiments</h1>
 
-      <article class="card experiment">
-        <header class="card-header">
-          <h3 class="title">My first experiment</h3>
-        </header>
+      <div class="articles">
+        <article class="card experiment">
+          <header class="card-header">
+            <h4 class="title">First experiment</h4>
+          </header>
 
-        <div class="card-body">
-          <p><em>WIP</em></p>
-          <p>JS Basic</p>
-          <p><a href="#" class="external">See in Github</a></p>
-        </div>
+          <div class="card-body">
+              <p><em>WIP</em></p>
+              <p>JS Basic</p>
+              <p><a href="#" class="external">See in Github</a></p>
+              <p>Created in: xx/xx/xxxx</p>
+          </div>
+        </article>
 
-        <footer>
-          <p>Created in: xx/xx/xxxx</p>
-        </footer>
-      </article>
+        <article class="card experiment">
+          <header class="card-header">
+            <h4 class="title">Second experiment</h4>
+          </header>
 
+          <div class="card-body">
+              <p><em>WIP</em></p>
+              <p>JS Basic</p>
+              <p><a href="#" class="external">See in Github</a></p>
+              <p>Created in: xx/xx/xxxx</p>
+          </div>
+        </article>
+      </div>
     </section>
-    <div class="clearfix"></div>
+
+    <div class="link-section">
+        <a class="return-to-home" href='../index.html'>Return to home</a>
+    </div>
   </main>
-  <button class="push-button button hidden">You lost!</button>
+  
+  <div class="get-back-window hidden">
+    <h3 class="get-back-text hidden">Only loosers leave my page!</h3>
+    <button class="push-button button hidden">Get back!</button>
+  </div>
+
+  <footer class="footer">
+      <p class="white-text">Follow me</p>
+  </footer>
+
   <script src="../students.js"></script>
   <script type="text/javascript" src="asa.js";></script>
 </body>
